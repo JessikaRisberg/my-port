@@ -1,0 +1,126 @@
+.about {
+  min-height: 100vh;
+  padding: 6rem 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: 6rem 2rem;
+  }
+}
+
+.about-container {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 3rem;
+  }
+}
+
+.about-divider {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 3rem;
+}
+
+.about-content {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-text p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-technologies-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about-technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.about-technology-tag {
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.2s;
+}
+
+.about-technology-tag:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-skills {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .about-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-skills {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.about-skill-card {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  transition: background-color 0.2s;
+}
+
+.about-skill-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-skill-icon {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.about-skill-title {
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about-skill-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+}

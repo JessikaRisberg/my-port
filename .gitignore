@@ -1,0 +1,34 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+dist/
+dist-ssr/
+*.local
+
+# Vite
+.vite/
+.cache/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specifika filer
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
