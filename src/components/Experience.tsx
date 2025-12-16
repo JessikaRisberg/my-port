@@ -12,12 +12,14 @@ export function Experience() {
   const workExperience = [
     {
       title: 'IT-Konsult',
+      client: 'Soltak AB',
       company: 'GetIT Nordic AB',
       period: '2023 - Nuvarande',
       description: 'Leder utvecklingen av företagets huvudprodukt. Arbetar med React, TypeScript och Node.js. Mentorskap av juniora utvecklare.',
     },
     {
       title: 'Fullstack-utvecklare',
+      client: 'Soltak AB',
       company: 'Digital Agency',
       period: '2020 - 2022',
       description: 'Utvecklade webbapplikationer för olika kunder inom e-handel och fintech. Stack: React, Vue.js, Python, PostgreSQL.',
@@ -68,7 +70,7 @@ export function Experience() {
               <div className="experience-items">
                 {workExperience.map((job, index) => (
                   <motion.div
-                    key={job.title}
+                    key={job.title + job.client}
                     initial={{ opacity: 0, x: -20 }}
                     animate={inView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -77,7 +79,8 @@ export function Experience() {
                     <div className="experience-item-dot"></div>
                     <div className="experience-item-header">
                       <h4 className="experience-item-title">{job.title}</h4>
-                      <p className="experience-item-company">{job.company}</p>
+                      <p className="experience-item-client">{job.client}</p>
+                      <p className="experience-item-company">via {job.company}</p>
                       <p className="experience-item-period">{job.period}</p>
                     </div>
                     <p className="experience-item-description">{job.description}</p>

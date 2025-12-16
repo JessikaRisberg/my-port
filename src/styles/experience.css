@@ -91,6 +91,10 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
+.experience-item-client {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .experience-item-company {
   color: rgba(255, 255, 255, 0.6);
 }
